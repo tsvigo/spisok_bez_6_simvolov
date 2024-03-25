@@ -80,8 +80,9 @@ Dialog::Dialog(QWidget *parent)
         // myString=mass[0];
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         font= subString;
-         comanda3=font+".bmp";
-         comanda4=comanda1+font+comanda2+comanda3;
+         comanda3=font+".bmp"; // название файла из названия шрифта
+         comanda4=comanda1+font+comanda2+comanda3; // из текста
+         // теперь надо только чёрный и белый
         //  execl("/bin/sh", "/bin/sh", "-c", comanda4.toStdString().c_str() , 0);
           system (comanda4.toStdString().c_str() );
 /// 
